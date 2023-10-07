@@ -1,3 +1,4 @@
+
 import java.util.*;
 
     //The DivideAndConquer class represents 2D points
