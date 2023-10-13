@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        String algorithm;
+        int algorithm;
 
         Random random = new Random();
         int n = 1000;
@@ -15,44 +15,60 @@ public class Main {
             points[i] = new Point(x, y);
         }
 
-        System.out.println("What algorithm would you like to use?");
-        algorithm = scan.nextLine();
+        for (int i = 0; i > -1; i++) {
 
-        switch(algorithm) {
-            case "brute force":
-                int[] closestPair1 = BruteForce.bruteForce(points);
+            System.out.println("What algorithm would you like to use?\n" +
+                    "1. Brute Force\n" +
+                    "2. Divide and Conquer\n" +
+                    "3. Decrease and Conquer\n" +
+                    "4. Random\n" +
+                    "5. End");
+            algorithm = scan.nextInt();
 
-                System.out.println("Closest Pair Indices: (" + closestPair1[0] + ", " + closestPair1[1] + ")");
+            switch (algorithm) {
+                case 1:
+                    int[] closestPair1 = BruteForce.bruteForce(points);
 
-                Point point1 = points[closestPair1[0]];
-                Point point2 = points[closestPair1[1]];
+                    System.out.println("Closest Pair Indices: (" + closestPair1[0] + ", " + closestPair1[1] + ")");
 
-                System.out.println("List of Points:");
-                for (int i = 0; i < n; i++) {
-                    System.out.println("Point " + (i + 1) + ": (" + points[i].x + ", " + points[i].y + ")");
-                }
+                    Point point1 = points[closestPair1[0]];
+                    Point point2 = points[closestPair1[1]];
 
-                System.out.println("Closest Pair Distance: " + getDistance(point1, point2));
-                return;
+                    System.out.println("List of Points:");
+                    for (int j = 0; j < n; j++) {
+                        System.out.println("Point " + (j + 1) + ": (" + points[j].x + ", " + points[j].y + ")");
+                    }
 
-            case "divide and conquer":
-                int[] closestPair2 = DivideAndConquer.divideAndConquer(points);
+                    System.out.println("Closest Pair Distance: " + getDistance(point1, point2));
+                    break;
 
-                System.out.println("Closest Pair Indices: (" + closestPair2[0] + ", " + closestPair2[1] + ")");
+                case 2:
+                    int[] closestPair2 = DivideAndConquer.divideAndConquer(points);
 
-                Point point3 = points[closestPair2[0]];
-                Point point4 = points[closestPair2[1]];
+                    System.out.println("Closest Pair Indices: (" + closestPair2[0] + ", " + closestPair2[1] + ")");
 
-                System.out.println("List of Points:");
-                for (int i = 0; i < n; i++) {
-                    System.out.println("Point " + (i + 1) + ": (" + points[i].x + ", " + points[i].y + ")");
-                }
+                    Point point3 = points[closestPair2[0]];
+                    Point point4 = points[closestPair2[1]];
 
-                System.out.println("Closest Pair Distance: " + getDistance(point3, point4));
-                return;
+                    System.out.println("List of Points:");
+                    for (int j = 0; j < n; j++) {
+                        System.out.println("Point " + (j + 1) + ": (" + points[j].x + ", " + points[j].y + ")");
+                    }
 
-            default:
-                return;
+                    System.out.println("Closest Pair Distance: " + getDistance(point3, point4));
+                    break;
+
+                case 3:
+                    break;
+                case 4:
+                    break;
+                case 5:
+                    i=-3;
+
+                default:
+                    return;
+            }
+            System.out.println();
         }
     }
     public static double getDistance(Point p1, Point p2) {
