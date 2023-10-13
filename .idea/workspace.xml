@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c4b19718-ab4a-4870-b292-15dab5d08490" name="Changes" comment="Brute Force, Main, and Point class updates">
+    <list default="true" id="c4b19718-ab4a-4870-b292-15dab5d08490" name="Changes" comment="Adding user-friendliness to main class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -58,7 +58,14 @@
       <option name="project" value="LOCAL" />
       <updated>1697207424768</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Adding user-friendliness to main class">
+      <created>1697211704779</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1697211704779</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -75,6 +82,18 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adding classes" />
     <MESSAGE value="Brute Force, Main, and Point class updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="Brute Force, Main, and Point class updates" />
+    <MESSAGE value="Adding user-friendliness to main class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding user-friendliness to main class" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
