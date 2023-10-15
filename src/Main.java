@@ -37,11 +37,12 @@ public class Main {
                     break;
 
                 case 3:
-                    // Implement Decrease and Conquer
+                    int[] closestPair3 = DecreaseAndConquer.decreaseAndConquer(points);
                     break;
 
                 case 4:
-                    // Implement Random
+                    int[] closestPair4 = Randomized.randomized(points);
+                    displayResult(points, closestPair4);
                     break;
 
                 case 5:
@@ -78,6 +79,3 @@ public class Main {
         return Math.sqrt(dx * dx + dy * dy);
     }
 }
-
-
-
