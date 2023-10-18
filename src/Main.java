@@ -38,6 +38,7 @@ public class Main {
 
                 case 3:
                     int[] closestPair3 = DecreaseAndConquer.decreaseAndConquer(points);
+                    displayResult(points, closestPair3);
                     break;
 
                 case 4:
