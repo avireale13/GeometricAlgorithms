@@ -48,7 +48,7 @@ public class Main {
 
                 case 5:
                     i = -3;
-                    break;
+                    return;
 
                 default:
                     return;
