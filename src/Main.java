@@ -6,7 +6,11 @@ public class Main {
         int algorithm;
 
         Random random = new Random();
-        int n = 1000;
+        //int n = 1000;
+        System.out.println("How many points do you want to use?");
+        int n = scan.nextInt();
+        System.out.println();
+      
         Point[] points = new Point[n];
         for (int i = 0; i < n; i++) {
             double x = random.nextDouble() * 10000;
@@ -65,11 +69,12 @@ public class Main {
 
         Point point1 = points[closestPairIndices[0]];
         Point point2 = points[closestPairIndices[1]];
-
+/*
         System.out.println("List of Points:");
         for (int j = 0; j < points.length; j++) {
             System.out.println("Point " + (j + 1) + ": (" + points[j].x + ", " + points[j].y + ")");
         }
+*/
 
         System.out.println("Closest Pair Distance: " + getDistance(point1, point2));
     }
